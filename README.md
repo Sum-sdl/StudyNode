@@ -1,2 +1,3 @@
 # StudyNode
-StudyNode
+
+学习笔记，仅供参考，重在实践和自己查看
