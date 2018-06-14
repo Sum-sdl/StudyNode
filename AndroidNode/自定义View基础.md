@@ -33,15 +33,17 @@ event.getRawX() //触摸点相对于屏幕坐标
 #### 3.View的绘制流程
 
 1.  测量View大小(onMeasure)
-    * 在onMeasure方法中去除宽高的相关数据 
-    * MeasureSpec.getSize(wms) 取出宽度的确切数值
-    * MeasureSpec.getModel(wms) 取出宽度的测量模式
+    * 在onMeasure方法中去计算宽高的相关数据 
+    * MeasureSpec.getSize(wms) 取出View在XML中的自己宽度确切数值，在warp_content的时候大小是父View的大小
+    * MeasureSpec.getModel(wms) 取出View在XML中的自己的测量模式（理论上在warp_content的时候手动计算内容）
+    * MeasureSpec.makeMeasureSpec(size,mode) 自己创建一个大小和model的计算值（可以给其他地方使用）
     
 测量模式 | 二进制值|描述
 ---|---|---
 UNSPECIFIED| 00|默认值，父控件没有给子view任何限制，子View可以设置为任意大小。
 EXACTLY| 01|父控件已经确切的指定了子View的大小（match_parent/具体值）。
 AT_MOST| 10|子View具体大小没有尺寸限制，但是存在上限，上限一般为父View大小(warp_content)。
+总结|->|View的默认大小计算是AT_MOST和EXACTLY的大小是一样的，具体自定义View根据需求自己来计算大小
 
 **注：对View的宽高进行修改，不要调用super.onMeasure(),最后调用setMeasuredDimension()这个函数**
 
