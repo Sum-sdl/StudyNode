@@ -43,9 +43,9 @@ event.getRawX() //触摸点相对于屏幕坐标
 UNSPECIFIED| 00|默认值，父控件没有给子view任何限制，子View可以设置为任意大小。
 EXACTLY| 01|父控件已经确切的指定了子View的大小（match_parent/具体值）。
 AT_MOST| 10|子View具体大小没有尺寸限制，但是存在上限，上限一般为父View大小(warp_content)。
-总结|->|View的默认大小计算是AT_MOST和EXACTLY的大小是一样的，具体自定义View根据需求自己来计算大小
+总结||View的默认大小计算是AT_MOST和EXACTLY的大小是一样的，具体自定义View根据需求自己来计算大小，理清楚基础概念说明
 
-**注：对View的宽高进行修改，不要调用super.onMeasure(),最后调用setMeasuredDimension()这个函数**
+**注：对View的宽高进行修改，可以不调用super.onMeasure(),主要是最后调用setMeasuredDimension()函数这确定View的最后大小，自己的大小超出父view大小，会受到clipChildren属性影响**
 
 
 

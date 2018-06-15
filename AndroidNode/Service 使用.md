@@ -21,5 +21,5 @@
 *JobIntentService内部通过AsyncTask来执行工作,有线程池缓存*
 *IntentService直接通过创建HandlerThread的子线程looper来完成*
 
-####我的测试Demo
+####测试Demo
 https://github.com/Sum-sdl/AndriodDevelopLibrary/blob/master/sample/src/main/java/com/sum/andrioddeveloplibrary/testActivity/ServiceTestActivity.kt
