@@ -12,14 +12,12 @@ inflate(...)如果参数中带**有父View并且没有attach到父View**，在�
 
 LayoutParams规定了一个View能够在布局中绘制的区域的大小，以及和parent的margin参数，超出区域大小的View不做绘制
 
-**父View在addView的时候必须给添加的子View必须有LayoutParmas或者addView的时候设置一个LayoutParmas** (见源码)
+**父View在addView的时候必须给添加的子View必须有LayoutParams或者addView的时候设置一个LayoutParams** (见源码)
 
 
 ### 3.相关说明
 
-View的大小即getWidth getMeasureWidth 跟LayoutParams没有关系任何关系，默认情况下两者的值是一致的。
-
-View的大小有 **setMeasuredDimension(w,h)** 方法决定
-LayoutParams是xml解析的时候由xml中的属性决定,LayoutParams只是负责绘制的区域
-
-
+- View的大小即getWidth getMeasureWidth 跟LayoutParams没有关系任何关系，默认情况下两者的值是一致的。
+- View的大小有 **setMeasuredDimension(w,h)** 方法决定
+- LayoutParams是xml解析的时候由xml中的属性决定,LayoutParams只是负责绘制的区域
+- view的大小计算耗时：onMeasure() 中ViewGroup循环计算每个子view的大小后设置自己的大小，**避免过多的层级嵌套**
