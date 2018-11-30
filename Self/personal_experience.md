@@ -1,6 +1,6 @@
 # 联系方式
 - 手机：16651105770 (江苏,南京)
-- Email：summer1079569023@gmail.com 
+- Email：sum.shidelei@gmail.com 
 - QQ/微信号：1079569023
 
 ---
@@ -9,7 +9,7 @@
 
  - 施德磊/男/1992 
  - 本科/铜陵计算机系 
- - 工作年限：4年+
+ - 工作年限：4年
  - 技术博客：[掘金](https://juejin.im/user/5b57f062e51d4519202e2aab)
  - GitHub：https://github.com/Sum-sdl/AndriodDevelopLibrary
  - 期望职位：Android高级开发，应用架构师
@@ -63,8 +63,8 @@
  * 用户端
  
 ## 其他开发的项目
- * 靓装网购
  * HoopEasy
+ * 靓装网购
  * 美头条
  * 看链
  * 博客园
@@ -82,7 +82,7 @@
 
 - Android:Java/Kotlin/LiveData/RxJava/Retrofit/Fresco/Glide
 - Flutter:Widget/dio/pathProvider/sharedPreferences/Swiper
-- 小程序
+- 小程序基础开发
 - 版本管理和自动化构建：Svn/Git/Jenkins
 - 常用开放平台：百度/腾讯/微信开放平台/友盟/极光/融云/环信
 
