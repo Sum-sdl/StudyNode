@@ -12,8 +12,8 @@
  - 工作年限：4年
  - 技术博客：[掘金](https://juejin.im/user/5b57f062e51d4519202e2aab)
  - GitHub：https://github.com/Sum-sdl/AndriodDevelopLibrary
- - 期望职位：Android高级开发，应用架构师
- - 期望薪资：税前月薪15k~20k，特别喜欢的公司可例外
+ - 期望职位：Android高级开发，Flutter开发
+ - 期望薪资：税前月薪15k~20k
  - 期望城市：南京
 
 ---
@@ -66,6 +66,7 @@
  * HoopEasy
  * 靓装网购
  * 美头条
+ * 甄好借
  * 看链
  * 博客园
 ---
